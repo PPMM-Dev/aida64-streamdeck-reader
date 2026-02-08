@@ -1,0 +1,38 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Sensor Reader",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Display a sensor from AIDA64",
+      "UUID": "com.ppmm.aida64reader.sensorreader.keyaction",
+      "PropertyInspectorPath": "PropertyInspector/SenSorReaderKeyActionPI.html"
+    }
+  ],
+  "Author": "PPMM",
+  "Name": "com.ppmm.aida64reader",
+  "Description": "TODO",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://github.com/PPMM-Dev",
+  "Version": "0.1",
+  "CodePath": "Aida64SdReader",
+  "Category": "AIDA64 Reader",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.4"
+  }
+}
