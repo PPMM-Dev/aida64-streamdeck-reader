@@ -1,5 +1,5 @@
-﻿function resetCounter() {
+﻿function refreshSensorsList() {
     var payload = {};
-    payload.property_inspector = 'resetCounter';
+    payload.method_to_start = 'refreshSensorList';
     sendPayloadToPlugin(payload);
 }

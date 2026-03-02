@@ -22,7 +22,7 @@ namespace Aida64SDPlugin
 			Console.WriteLine("Watcher started");
 			SDWrapper.Run(args);
 
-			Thread.Sleep(Timeout.Infinite); //Change for a cleaner way to exit
+			await Task.Delay(Timeout.Infinite);
 		}
 	}
 }

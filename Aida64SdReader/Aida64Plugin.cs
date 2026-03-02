@@ -2,6 +2,8 @@
 using Aida64SDPlugin.Models;
 using Aida64SDPlugin.Parsing;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.Versioning;
 using System.Threading;
 using System.Threading.Tasks;
@@ -73,6 +75,14 @@ namespace Aida64SDPlugin
 				return sensorData;
 
 			return null;
+		}
+
+		public List<string> GetSensorsList()
+		{
+			if (_sensorDataCache == null)
+				return new List<string>();
+
+			return _sensorDataCache.GetSensorsList();
 		}
 
 		[SupportedOSPlatform("windows")]
